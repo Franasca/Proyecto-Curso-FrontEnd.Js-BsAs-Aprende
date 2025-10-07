@@ -1,0 +1,29 @@
+/* Reset de css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilo de los headers */
+
+/* Estilo del footer */
+
+
+/* Estilo de main de index */
+.contenedor_tarjetas { 
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: center; 
+} 
+/*  */
+.tarjeta_producto { 
+    flex:1 1 200px; 
+    margin: 10px; 
+    background-color: #2196F3; 
+    color: white; 
+    padding: 20px; 
+} 
+
+/* Estilo del formulario de contacto */
