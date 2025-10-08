@@ -18,46 +18,53 @@
     </header>
     <!--  -->
 <main>
-    <section class="zona_formulario">
+    <section class="seccion_formulario">
         <!--  -->
-        <h2 class="titulo-contacto">Formulario de contacto</h2>
-        <!--  -->
-        <form class="form_contacto" action="https://formspree.io/f/mqayloyz" method="POST">
-            <!--  -->
-            <div class="campo_formulario">
-                <label for="apellido_nombre">Apellido y Nombre:</label>
-                <input type="text" name="apellido_nombre" id="apellido_nombre" required>
-            </div>
-            <!--  -->
-            <div class="campo_formulario">
-                <label for="correo">Correo electrónico:</label>
-                <input type="email" name="correo" id="correo" required>
-            </div>
-            <!--  -->
-            <div class="campo_formulario">
-                <label for="motivo">Motivo de la consulta:</label>
-                <select name="motivo" id="motivo" required>
-                    <option value="" disabled selected>Elige una opción...</option>
-                    <option value="consulta_producto">Consulta sobre un producto</option>
-                    <option value="problema_pago">Problema con el pago</option>
-                    <option value="envios">Envíos y entregas</option>
-                    <option value="otro">Otro</option>
-                </select>
-            </div>
-            <!--  -->
-            <div class="campo_formulario">
-                <label for="mensaje">Tu mensaje:</label>
-                <textarea name="mensaje" id="mensaje" rows="6" required maxlength="500"></textarea>
-            </div>
-            <!--  -->
-            <button type="submit">Enviar Consulta</button>
-            <!--  -->
+        <form class="formulario" action="https://formspree.io/f/mqayloyz" method="POST">
+            <fieldset class="campos_formulario"> 
+                <!--  -->
+                <legend class="titulo-formulario">Formulario de contacto</legend>
+                <!--  -->
+                <div class="campo">
+                    <label for="apellido_nombre">Apellido y Nombre:</label>
+                    <input type="text" name="apellido_nombre" id="apellido_nombre" required>
+                </div>
+                <!--  -->
+                <div class="campo">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" name="correo" id="correo" required>
+                </div>
+                <!--  -->
+                <div class="campo">
+                    <label for="motivo">Motivo de la consulta:</label>
+                    <select name="motivo" id="motivo" required>
+                        <option value="" disabled selected>Elige una opción...</option>
+                        <option value="consulta_producto">Consulta sobre un producto</option>
+                        <option value="problema_pago">Problema con el pago</option>
+                        <option value="envios">Envíos y entregas</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <!--  -->
+                <div class="campo">
+                    <label for="mensaje">Tu mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" rows="6" required maxlength="500"></textarea>
+                </div>
+                <!--  -->
+                <div class="campo">
+                    <input type="checkbox" name="privacidad" id="privacidad" required>
+                    <label for="privacidad">Acepto la <a href="/SubPaginas/politicaPrivacidad.html">Política de Privacidad</a></label>
+                </div>
+                <!--  -->
+                <button type="submit">Enviar Consulta</button>
+                <!--  -->
+            </fieldset>
         </form>
     </section>
 </main>
 <!--  -->
 <footer>
-        <p>Pagina diseñada por Ascacibar Franco</p>
+    <p>Pagina diseñada por Ascacibar Franco</p>
 </footer>
 </body>
 </html>
